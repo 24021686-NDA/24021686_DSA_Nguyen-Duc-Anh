@@ -18,3 +18,5 @@ int main() {
     cout << "Tổng các phần tử trong dãy là:" << tong << endl;
     return 0;
 }
+//Độ phức tạp thời gian O(n)
+//Độ phức tạp bộ nhớ O(n)
