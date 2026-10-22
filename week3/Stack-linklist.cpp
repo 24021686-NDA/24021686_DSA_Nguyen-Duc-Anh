@@ -10,14 +10,14 @@ public:
     }
 };
 // Them vao dau
-Node* Inserthead(Node* head, int x) {
+Node* AddFirst(Node* head, int x) {
     Node* temp = new Node(x);
     temp->next = head;
     return temp;
 }
 
 // Them vao cuoi
-Node* InsertTail(Node* head, int x) {
+Node* AddTail(Node* head, int x) {
     Node* temp = new Node(x);
     Node* current = head;
     while (current->next != NULL) {
@@ -27,7 +27,7 @@ Node* InsertTail(Node* head, int x) {
     return head;
 }
 // Them vao vi tri k
-Node* InsertK(Node* head, int x, int k) {
+Node* AddK(Node* head, int x, int k) {
     Node* current = head;
     for (int i = 1; i < k - 1; i++) {
         current = current->next;
@@ -38,7 +38,7 @@ Node* InsertK(Node* head, int x, int k) {
     return head;
 }
 // Xoa dau
-Node* Deletehead(Node* head) {
+Node* DeleteFirst(Node* head) {
     Node* current = head->next;
     delete head;
     return current;
@@ -82,11 +82,11 @@ struct Stack{
     }
 
 void push(int item){
-    a = Inserthead(a,item);
+    a = AddFirst(a,item);
 }
 void pop(){
     cout<< a->data<<endl;
-    a = Deletehead(a);
+    a = DeleteFirst(a);
 }
 int top(){
     return a->data;
