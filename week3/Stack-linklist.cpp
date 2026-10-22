@@ -100,13 +100,13 @@ void empty(){
 }
 };
 int main(){
-    Stack tmp;
-    tmp.push(1);
-    tmp.push(2);
-    int a= tmp.top();
+    Stack s;
+    s.push(1);
+    s.push(2);
+    int a= s.top();
     cout<<a<<endl;
-    tmp.pop();
-    tmp.pop();
-    tmp.empty();
+    s.pop();
+    s.pop();
+    s.empty();
     return 0;
 }
