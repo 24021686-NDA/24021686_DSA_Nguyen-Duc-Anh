@@ -12,14 +12,14 @@ public:
 };
 
 // Them vao dau
-Node* Inserthead(Node* head, int x) {
+Node* AddFirst(Node* head, int x) {
     Node* temp = new Node(x);
     temp->next = head;
     return temp;
 }
 
 // Them vao cuoi 
-Node* InsertTail(Node* head, int x) {
+Node* AddTail(Node* head, int x) {
     Node* temp = new Node(x);
     if (head == NULL) {
         return temp;
@@ -33,7 +33,7 @@ Node* InsertTail(Node* head, int x) {
 }
 
 // Them vao vi tri k
-Node* InsertK(Node* head, int x, int k) {
+Node* AddK(Node* head, int x, int k) {
     Node* current = head;
     for (int i = 1; i < k - 1; i++) {
         current = current->next;
@@ -45,7 +45,7 @@ Node* InsertK(Node* head, int x, int k) {
 }
 
 // Xoa dau
-Node* Deletehead(Node* head) {
+Node* DeleteFIrst(Node* head) {
     if (head == NULL) return NULL;
     Node* current = head->next;
     delete head;
@@ -93,14 +93,14 @@ struct Queue {
 
     // Thêm phần tử vào cuối hàng đợi
     void enqueue(int item) {
-        a = InsertTail(a, item);
+        a = AddTail(a, item);
     }
 
     // Lấy phần tử ở đầu hàng đợi ra và xóa đi
     void dequeue() {
         if (a != NULL) {
             cout << a->data << endl;
-            a = Deletehead(a);
+            a = DeleteFirst(a);
         }
     }
 
