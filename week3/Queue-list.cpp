@@ -27,15 +27,15 @@ struct Queue{
 };
 
 int main(){
-    Queue a;
-    a.enqueue(1);
-    a.enqueue(2);
-    a.enqueue(3);
+    Queue q;
+    q.enqueue(1);
+    q.enqueue(2);
+    q.enqueue(3);
 
-    cout<<a.dequeue()<<endl;
-    cout<<a.dequeue()<<endl;
-    cout<<a.dequeue()<<endl;
+    cout<<q.dequeue()<<endl;
+    cout<<q.dequeue()<<endl;
+    cout<<q.dequeue()<<endl;
 
-    a.empty();
+    q.empty();
     return 0;
 }
