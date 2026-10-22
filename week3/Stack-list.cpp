@@ -22,13 +22,13 @@ void empty(){
 }
 };
 int main(){
-    Stack a;
-    a.push(1);
-    a.push(2);
-    a.push(3);
-cout<<a.pop()<<endl;
-cout<<a.pop()<<endl;
-cout<<a.pop()<<endl;
-    a.empty();
+    Stack s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+cout<<s.pop()<<endl;
+cout<<s.pop()<<endl;
+cout<<s.pop()<<endl;
+    s.empty();
     return 0;
 }
