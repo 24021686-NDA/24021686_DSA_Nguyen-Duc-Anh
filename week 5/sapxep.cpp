@@ -22,7 +22,7 @@ void bubblesort(int a[], int n){
         }
     }
 }
-void sapxepchen(int a[], int n){
+void insertsort(int a[], int n){
     for(int i = 1; i < n; i++){
         int key = a[i];
         int j = i - 1;
